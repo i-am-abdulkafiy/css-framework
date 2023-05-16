@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="css/main.css">
+ <title>Html Css Made Easy</title>
+</head>
+<body>
+
+  <div class="navbar bg-dark p-0-auto">
+    <div class="container">
+      <a href="#" class="logo text-left text-md text-white medium-bold">
+        Brand
+      </a>
+      <button class="navbar-toggler-btn dis-md-none">
+        <span class="navbar-toggle-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav dis-flex">
+          <li class="list-item"><a href="#">Home</a></li>
+          <li class="list-item"><a href="#">Docs</a></li>
+          <li class="list-item"><a href="#">How-to-css</a></li>
+          <li class="list-item"><a href="#">Download</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+<section class="bg-dark">
+  <div class="container">
+    <div class="hero dis-flex text-white align-center justify-content-between gap-20 p-0-auto">
+      <div class="p-top-20 p-bottom-20 text-left">
+        <h1 class="text-lg medium-bold m-bottom-20">Become a <span class="text-warning">Web Developer</span>
+        </h1>
+        <p class="text-md light-w m-bottom-30">
+          We focus on teaching our students the fundamentals of the latest and greatest technologies to prepare them for
+          their first dev role.
+        </p>
+        <button class="btn btn-primary" type="button">Start The Enrollment</button>
+      </div>
+      <img src="img/showcase.svg" alt="coding" class="img-fix w-50 dis-none">
+    </div>
+  </div>
+</section>
+<section class="bg-white">
+  <div class="container">
+    <div class="dis-grid text-white p-0-auto text-center three-column gap-20">
+      <div class="grid-card bg-success p-0-auto">
+        <img src="img/showcase.svg" alt="coding" class="w-100">
+       <p class="m-top-30 text-start semi-bold">
+        We focus on teaching our students the fundamentals of the latest and greatest technologies to prepare them for their first dev role.
+       </p>
+      </div>
+      <div class="grid-card bg-success p-0-auto">
+        <img src="img/showcase.svg" alt="coding" class="w-100">
+       <p class="m-top-30 text-start semi-bold">
+        We focus on teaching our students the fundamentals of the latest and greatest technologies to prepare them for their first dev role.
+       </p>
+      </div>
+      <div class="grid-card bg-success text-white p-0-auto">
+        <img src="img/showcase.svg" alt="coding" class="w-100">
+       <p class="m-top-30 text-start semi-bold">
+        We focus on teaching our students the fundamentals of the latest and greatest technologies to prepare them for their first dev role.
+       </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+
+  const menu_icon = document.querySelector('.navbar-toggler-btn');
+  const toggler_navbar = document.querySelector('.collapse');
+
+  menu_icon.addEventListener("click", ()=>{
+    toggler_navbar.classList.toggle("active");
+  });
+
+</script>
+
+</body>
+</html>
